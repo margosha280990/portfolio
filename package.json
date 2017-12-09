@@ -1,16 +1,34 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Korotkova Daria # dariaKorotkova",
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.2.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-webpack": "^1.5.0",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
+    "webpack": "^3.10.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margosha280990/dariaKorotkova.git"
+  },
+  "bugs": {
+    "url": "https://github.com/margosha280990/dariaKorotkova/issues"
+  },
+  "homepage": "https://github.com/margosha280990/dariaKorotkova#readme"
 }
