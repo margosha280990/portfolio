@@ -1,7 +1,79 @@
-body{
-    margin: 100px;
-    background: #cccccc
+@font-face {
+    font-family: "Roboto";
+    src: url("/assets/fonts/Roboto-Regular.ttf") format('truetype');
+    src: url("/assets/fonts/Roboto-Italic.ttf") format('truetype');
+    src: url("/assets/fonts/Roboto-Medium.ttf") format('truetype');
+    src: url("/assets/fonts/Roboto-Bold.ttf") format('truetype');
 }
+@font-face {
+    font-family: "Sansus";
+    src: url("/assets/fonts/Sansus-Webissimo-Regular.ttf") format('truetype');
+}
+
+body{
+    margin: 50px;
+    background-image: url(/assets/images/sand.jpg);
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
+
+}
+.register {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+}
+.main_img{
+    background-image: url(/assets/images/ya2.jpg);
+    background-size: cover;
+    width:150px;
+    height:150px;
+    margin-left: 44%;
+    border-radius: 200px;
+    
+}
+.desert{
+   /* max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);   gtgt*/
+    text-align: center;
+}
+.desert h1 {
+    font-family: "Sansus";
+    font-size: 35px;
+    color: #fff;
+}
+
+.button {
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    float: right;
+    padding: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #fff;
+    color: #cd8920;
+    border: 1px solid #cd8920;
+    border-radius:3px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.socials{list-style: none}
+.foot{text-align: center;}
+.fp {
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    font-weight: 700;}
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';

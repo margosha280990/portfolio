@@ -1,0 +1,19 @@
+//extends ../template
+
+block variables
+    - var title = "Добро пожаловать О великий администратор и гуру!"
+
+block content
+    h1 Авторизуйтесь
+    form(class='register')
+        
+        input(name="email" id="email" placeholder="Логин")
+        input(name="password" id="password" placeholder="Пароль")
+        label(for="agreement") Я человек
+        input(type='checkbox' name='agreement' checked)
+        p Вы точно не робот?
+        label(for="yes") Да
+        input(type='radio' name='yes' checked)
+        label(for="no") Нет
+        input(type='radio' name='no')
+        button Войти

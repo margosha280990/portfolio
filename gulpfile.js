@@ -29,7 +29,11 @@ const paths = {
     scripts: {
         src: 'src/scripts/**/*.js',
         dest: 'build/assets/scripts/'
-    }
+    },
+    fonts: {
+        src: 'src/styles/fonts/**/*.*',
+        dest: 'build/assets/fonts/'
+    },
 
 }
 
@@ -61,6 +65,7 @@ function watch() {
     gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
     gulp.watch(paths.scripts.src, scripts);
+    gulp.watch(paths.fonts.src, fonts);
 }
 
 //server
@@ -76,6 +81,12 @@ function images() {
     return gulp.src(paths.images.src)
         .pipe(gulp.dest(paths.images.dest));
 }
+//shrift perenos
+function fonts() {
+    return gulp.src(paths.fonts.src)
+        .pipe(gulp.dest(paths.fonts.dest));
+}
+
 
 function scripts() {
     return gulp.src('src/scripts/app.js')
@@ -87,10 +98,11 @@ function scripts() {
 exports.templates = templates;
 exports.styles = styles;
 exports.images = images;
+exports.fonts = fonts;
 //exports.del = del;
 //exports.watch = watch;
 
 gulp.task('default', gulp.series(
-    gulp.parallel(styles, templates, images, scripts),
+    gulp.parallel(styles, templates, images, scripts, fonts),
     gulp.parallel(watch, server)
 ));
