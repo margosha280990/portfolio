@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",
+    "eslint-loader": "^1.9.0",
     "font-awesome": "^4.7.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-pug": "^3.3.0",

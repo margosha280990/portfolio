@@ -9,7 +9,20 @@ const config = {
         new UglifyJSPlugin({
             sourceMap: true
         })
-    ]
+    ],
+    module: {
+        rules:[
+            {
+                test: /\.js$/,
+                enforce: "pre",
+                loader: "eslint-loader",
+                options: {
+                    fix: true
+                }
+            }
+        ]
+
+    }
 };
 
 module.exports = config;

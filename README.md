@@ -14,6 +14,7 @@
 3. Created directory scr with 4 directories: images, scripts, styles, templates
 4. Created templates with ext pug, wrote functions in gulpfile.js. This functions works with templates, styles, images, fonts and scripts.Write some code
 5. Created style files with ext scss.Wrote some code
+6. Add eslink for project and settings for them
 --------
 git status
 git add .

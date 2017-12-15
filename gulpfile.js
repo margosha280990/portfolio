@@ -10,7 +10,7 @@ const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
 //const del = require('del');
-const jslint = require('gulp-jslint');
+//const jslint = require('gulp-jslint');
 
 const paths = {
     root: './build',
@@ -108,9 +108,9 @@ gulp.task('default', gulp.series(
     gulp.parallel(watch, server)
 ));
 
-gulp.task('default', function () {
-    return gulp.src(['source.js'])
+/*gulp.task('default', function () {
+    return gulp.src('src/scripts/**//**.js')
             .pipe(jslint())
             .pipe(jslint.reporter('default', errorsOnly))
             .pipe(jslint.reporter('stylish', options));
-});
+});*/
