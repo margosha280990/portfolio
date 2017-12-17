@@ -2,21 +2,42 @@
     font-family: "Roboto";
     src: url("/assets/fonts/Roboto-Regular.ttf") format('truetype');
     src: url("/assets/fonts/Roboto-Italic.ttf") format('truetype');
-    src: url("/assets/fonts/Roboto-Medium.ttf") format('truetype');
+    
     src: url("/assets/fonts/Roboto-Bold.ttf") format('truetype');
+}
+@font-face{
+    font-family: "Roboto-Medium";
+    src: url("/assets/fonts/Roboto-Medium.ttf") format('truetype');
+}
+@font-face{
+    font-family: "Roboto-Light";
+    src: url("/assets/fonts/Roboto-Light.ttf") format('truetype');
 }
 @font-face {
     font-family: "Sansus";
     src: url("/assets/fonts/Sansus-Webissimo-Regular.ttf") format('truetype');
 }
-
+* {
+    margin: 0 auto;
+}
 body{
-    margin: 50px;
-    background-image: url(/assets/images/sand.jpg);
+    margin: 0 auto;
+   /* background-image: url(/assets/images/sand.jpg);*/
     color: #fff;
-    font-family: "Roboto";
+    font-family: "Roboto-Medium";
     font-size: 16px;
 
+}
+.wrapper{
+    position: relative;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.header{
+    background: url(/assets/images/back.png) center no-repeat;; 
+    height: 400px;
+   
 }
 .register {
 
@@ -30,7 +51,6 @@ body{
     background-size: cover;
     width:150px;
     height:150px;
-    margin-left: 44%;
     border-radius: 200px;
     
 }
@@ -42,18 +62,22 @@ body{
     top: 50%;
     transform: translate(-50%, -40%);   gtgt*/
     text-align: center;
+    width: 300px; 
+    border-radius:5px;
+    opacity: 0.8;
+    background-color: #e2d0ae;
+    padding: 10px;
 }
 .desert h1 {
-    font-family: "Sansus";
-    font-size: 35px;
+    font-family: "Roboto-Medium";
     color: #fff;
 }
+.desert__text{padding: 5px;}
 
 .button {
     color:#fff;
     border: 1px solid #fff;
     border-radius: 3px;
-    float: right;
     padding: 10px;
     font-weight: 700;
     text-decoration: none;
@@ -67,13 +91,16 @@ body{
     text-decoration: none;
 }
 
-.socials{list-style: none}
-.foot{text-align: center;}
+.socials{list-style: none;display:flex;display: flex;
+    padding: 15px;}
+.foot{text-align: center;    padding: 40px;}
 .fp {
     color: #fff;
     font-size: 12px;
     display: inline-block;
     font-weight: 700;}
+.welcome{background: url(/assets/images/sand.jpg);background-size: cover;}
 @import 'common/menu';
 @import 'common/technologies';
 @import 'common/slider';
+@import 'common/about';

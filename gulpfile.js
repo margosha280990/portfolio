@@ -9,8 +9,7 @@ const browserSync = require('browser-sync').create();
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
 const webpackConfig = require('./webpack.config.js');
-//const del = require('del');
-//const jslint = require('gulp-jslint');
+
 
 const paths = {
     root: './build',
@@ -55,10 +54,7 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest))
 }
 
-//del
-//function del() {
-  //  return del(paths.root)
-//}
+
 
 //watch
 function watch() {
@@ -100,17 +96,10 @@ exports.templates = templates;
 exports.styles = styles;
 exports.images = images;
 exports.fonts = fonts;
-//exports.del = del;
-//exports.watch = watch;
+
 
 gulp.task('default', gulp.series(
     gulp.parallel(styles, templates, images, scripts, fonts),
     gulp.parallel(watch, server)
 ));
 
-/*gulp.task('default', function () {
-    return gulp.src('src/scripts/**//**.js')
-            .pipe(jslint())
-            .pipe(jslint.reporter('default', errorsOnly))
-            .pipe(jslint.reporter('stylish', options));
-});*/

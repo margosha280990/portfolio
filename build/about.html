@@ -11,26 +11,245 @@
     <script src="/assets/scripts/bundle.js" defer></script>
   </head>
   <body>
-    <h1>Обо мне</h1>
-    <p>Мои навыки
-      <ul class="technologies">
-        <li><img src="assets/images/js.svg"></li>
-        <li><img src="assets/images/oracle-logo.svg"></li>
-        <li><img src="assets/images/php.svg"></li>
-        <li><img src="assets/images/mysql-4.svg"></li>
-      </ul>
-    </p>
-    <ul class="menu">
-      <!--lia(href="/index.html") Главная
-      -->
-      <li><a href="/about.html">Обо мне</a></li>
-      <li><a href="/my-works.html">Портфолио</a></li>
-      <li><a href="/blog.html">Блог</a></li>
-    </ul>
-    <div class="foot">
-      <p class="fp">Короткова Дарья |</p>
-      <p class="fp">Создано в loftschool |</p>
-      <p class="fp">2017</p>
+    <div class="wrapper">
+      <header class="header">  
+        <section class="section hero">
+          <div class="hero__socials">
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__item socials__item_vk" href=""><img src="/assets/images/vk.svg"></a></li>
+              <li class="socials__item"><a class="socials__item socials__item_github" href=""><img src="/assets/images/github.svg"></a></li>
+              <li class="socials__item"><a class="socials__item socials__item_in" href=""><img src="/assets/images/in.svg"></a></li>
+            </ul>
+          </div>
+          <div class="hero__title">
+            <div class="section-title"><img class="section-title__pic" src="" alt=""></div>
+            <div class="user hero__user">
+              <div class="user__pic">
+                <div class="user__pic-img"></div>
+              </div>
+            </div>
+            <div class="user__description">
+              <h2 class="user__name">Дарья Короткова</h2>
+              <div class="user__info">Личный сайт разработчика</div>
+            </div>
+          </div>
+          <button class="hamburger hero__menu"></button><img class="arrow-down hero__scroll-btn" src="/assets/images/arrow-down.png">
+        </section>
+      </header>
+      <section class="section about">
+        <div class="about__left">
+          <div class="triangle tringle_fill_white about__left-triangle"></div>
+          <div class="about__left-title">
+            <h1 class="block-title">Обо мне</h1>
+          </div>
+          <div class="about__left-content">
+            <div class="user-description">
+              <div class="user-description__image"><img class="user-description__avatar" src="/assets/images/ya2.jpg"></div>
+            </div>
+            <div class="user-description__title">
+              <h3 class="block-subtitle">Кто я</h3>
+            </div>
+            <div class="user-description__text text-content">
+              <p>Я начальник веб отдела компании ООО "РосГид" из Санкт-Петербурга. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и работающие проекты.</p>
+              <p>Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about__right">
+          <div class="triangle tringle_fill_beige about__right-triangle"></div>
+          <div class="about__right-title">
+            <h3 class="block-subtitle">Чем я могу быть вам полезна</h3>
+          </div>
+          <div class="about__right-text text-content">
+            <p>Больше всего меня привлекет Frontend разработка, но я также могу решать задачи на Backend. Но давайте по порядку.</p>
+          </div>
+          <div class="about__right-content">
+            <ul class="skills-list">
+              <li class="skills-list__item">
+                <div class="skills-row">
+                  <h4 class="skills-row__title">Frontend
+                    <ul class="skills-row__list">
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">Html5</div>
+                        </div>
+                      </li>
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">css3</div>
+                        </div>
+                      </li>
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">JavaScript</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
+              </li>
+              <li class="skills-list__item">
+                <div class="skills-row">
+                  <h4 class="skills-row__title">Backend
+                    <ul class="skills-row__list">
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">Html5</div>
+                        </div>
+                      </li>
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">css3</div>
+                        </div>
+                      </li>
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">JavaScript</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
+              </li>
+              <li class="skills-list__item">
+                <div class="skills-row">
+                  <h4 class="skills-row__title">Workflow
+                    <ul class="skills-row__list">
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">Html5</div>
+                        </div>
+                      </li>
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">css3</div>
+                        </div>
+                      </li>
+                      <li class="skills-row__item">
+                        <div class="skill">
+                          <svg class="circles" viewBox="0 0 110 110">
+                            <circle class="circle__first" r="45" cx="50%" cy="50%" fill="none"></circle>
+                            <circle class="circle__second circle-75" r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)"></circle>
+                          </svg>
+                          <div class="skill__title">JavaScript</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section map">
+        <div class="google-map">
+          <iframe src="https://snazzymaps.com/embed/35869" width="100%" height="600px" style="border:none;"></iframe>
+        </div>
+        <div class="map__contacts">
+          <div class="contacts">
+            <div class="contacts__title">
+              <div class="block-subtitle">Контакты</div>
+            </div>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <div class="contacts-row"><img class="contacts-row__icon" src="/assets/images/skype.svg">
+                  <div class="contacts-row__content">margosha280990</div>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts-row"><img class="contacts-row__icon" src="/assets/images/envelope2.svg">
+                  <div class="contacts-row__content">ddm_90@mail.ru</div>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts-row"><img class="contacts-row__icon" src="/assets/images/phone2.svg">
+                  <div class="contacts-row__content">+79111434286</div>
+                </div>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts-row"><img class="contacts-row__icon" src="/assets/images/map-marker.svg">
+                  <div class="contacts-row__content">Санкт-Петербург</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="map__footer footer">
+        <div class="footer__row">
+          <div class="container">
+            <div class="footer__col footer__col-left">
+              <div class="footer__text">
+                <p class="footer__text_bold">Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделалa в рамках обучения в Школе онлайн образования LoftSchool.</p>
+              </div>
+            </div>
+            <div class="footer__col footer__col-right">
+              <div class="footer__text footer__text_margin_top">
+                <p>Короткова Дарья Дмитриевна</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="container">
+            <div class="footer__col footer__col-left">
+              <nav class="menu__footer"><a href="/about.html">Обо мне</a><a href="/my-works.html">Портфолио</a><a href="/blog.html">Блог</a><a href="/login.html">Авторизация</a></nav>
+            </div>
+            <div class="footer__col footer__col-right">
+              <ul class="socials socials_rounded">
+                <li class="socials__item"><a class="socials__item socials__item_vk" href=""><img src="/assets/images/vk.svg"></a></li>
+                <li class="socials__item"><a class="socials__item socials__item_github" href=""><img src="/assets/images/github.svg"></a></li>
+                <li class="socials__item"><a class="socials__item socials__item_in" href=""><img src="/assets/images/in.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="container">
+            <div class="footer__col footer__col-left">
+              <div class="footer__text_end">
+                <p>margosha280990</p>
+                <p>ddm_90@mail.ru</p>
+                <p>+79111434286</p>
+                <p>Санкт-Петербург</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
