@@ -4,14 +4,81 @@ block variables
     - var title = "Блог"
 
 block content
-    h1 Блог
-    ul
-        li
-             h2 Заголовок 1
-             p какой-то текст 
-        li
-             h2 Заголовок 2
-             p какой-то текст 
-        li
-             h2 Заголовок 3
-             p какой-то текст 
+    header.header   
+        section.section.hero
+            .hero__socials
+                ul.socials
+                    each item in ['vk', 'github', 'in']
+                        li.socials__item
+                            a(href="" class=`socials__item socials__item_${item}`)
+                                img(src=`/assets/images/${item}.svg`)
+            .hero__title
+                .section-title
+                    img(src="", alt="").section-title__pic
+                .user.hero__user
+                    .user__pic
+                        .user__pic-img
+                .user__description
+                    h1.block-title-u блог
+                    .user__info статьи, которые написала я
+            a(class="hamburger hero__menu")
+                .nav
+                    a(class="nav-item" href="/index.html") Главная
+                    a(class="nav-item" href="/about.html") Обо мне
+                    a(class="nav-item" href="/my-works.html") Портфолио
+                    a(class="nav-item" href="/blog.html") Блог
+                    a(class="nav-item" href="/login.html") Авторизация
+            
+    section.section.blog
+        .blog__main
+            .blog__treug
+        .blog__art
+            .blog__nav
+                ul.blog__nav-spisok
+                    li
+                        a(href="#tab1" class="blog__nav-hr active") Как создать сайт
+                    li
+                        a(href="#tab2" class="blog__nav-hr") Как создать сайт
+                    li
+                        a(href="#tab3" class="blog__nav-hr") Как создать сайт
+            .blog__arcticle
+                h2 Как создать сайт
+                p.blog__date 26 ноября 2016
+                p Вы решили приступить к созданию сайта?.. Прекрасно!Современный дизайн, идеальная вёрстка, совершенное программирование… Всё это просто чудесно, но, к сожалению, может оказаться недостаточным для максимальной эффективности Вашего ресурса. 
+                p В чём же секрет успеха?..
+                p В этой статье мы не будем говорить о том, что создание сайта процесс сложный, требующий внимания, умственных затрат и коллективных усилий. Будем надеяться, что величайшая важность этапа проектирования для Вас очевидна и Вы прекрасно понимаете, что именно на первой стадии работы закладываются основы успешного функционирования веб-ресурса. И, что самое главное, от Вас на данном этапе зависит очень многое.
+                p Готовы приступать к работе? Тогда эта статья для Вас!
+    footer.map__footer.footer
+      
+      .footer__row
+        .container
+          .footer__col.footer__col-left
+            .footer__text
+              p.footer__text_bold Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделалa в рамках обучения в Школе онлайн образования LoftSchool.
+          .footer__col.footer__col-right
+            .footer__text.footer__text_margin_top
+                p Короткова Дарья Дмитриевна
+      .footer__row
+        .container
+          .footer__col.footer__col-left
+            nav.menu__footer
+                a(href="/about.html") Обо мне
+                a(href="/my-works.html") Портфолио
+                a(href="/blog.html") Блог
+                a(href="/login.html") Авторизация
+          .footer__col.footer__col-right
+            
+            ul.socials.socials_rounded
+                each item in ['vk', 'github', 'in']
+                  li.socials__item
+                    a(href="" class=`socials__item socials__item_${item}`)
+                        img(src=`/assets/images/${item}.svg`)
+      .footer__row
+        .container
+          .footer__col.footer__col-left
+            .footer__text_end
+              p margosha280990
+              p ddm_90@mail.ru
+              p +79111434286
+              p Санкт-Петербург        
+            

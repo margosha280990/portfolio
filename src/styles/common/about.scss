@@ -199,10 +199,61 @@ margin-top: 10px;line-height: 1.5;width:92%;}
   .contacts{width:250px;}
   .map__footer.footer{background:url(/assets/images/rectangle-10.png);}
   .footer__row{display:inline-block; width:30%;}
-  .menu__footer{padding: 10px;
-    text-align: center; }
- .menu__footer a{color:#fff; text-decoration: none;padding: 10px;}
- .menu__footer a:hover{color:#cd8920;}
+  
  .footer__text{font-family: Roboto-Light;}
  .footer__text_bold{font-weight: bold;}
  .footer__text_end{text-align: end;font-family: Roboto-Light;}
+ .triangle.tringle_fill_white.about__left-triangle{width: 0;
+    width:0;
+    height: 0;
+    border-bottom: 100px solid #eeeee9;
+    border-right: 645.5px solid transparent;
+    position: absolute;
+    z-index: 20;
+    top: 300px;}
+.triangle.tringle_fill_beige.about__right-triangle{
+    width:0;
+    height: 0;
+    border-bottom: 100px solid #edecdf;
+    border-left: 645.5px solid transparent;
+    position: absolute;
+    z-index: 20;
+    top: 300px;
+}
+@media all and (max-width: 780px)
+{
+    .triangle.tringle_fill_white.about__left-triangle{
+        border-right: 243px solid transparent;
+        top: 500px;
+        z-index:40;
+    }
+    .triangle.tringle_fill_beige.about__right-triangle{
+        border-left: 320px solid transparent;
+        top: 500px;
+    }
+    .arrow-down.hero__scroll-btn{left:43%;top:15%;}
+    .about__left {
+        display: table;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+    }
+    .user-description__avatar {
+        width: 300px;
+        height: 271px;
+        margin-left: 10px;
+    }
+    section.section.about{flex-wrap: wrap;}
+    .about__left-title{display: block;
+    width:100%;}
+    .user-description__title{width:300px;}
+    .user-description__text.text-content{width:300px;}
+    .about__right{width:320px;}
+    .skills-row__item{}
+    .skill{width:100px;height: 100px;}
+    .skills-row__list{margin-left: -81px !important;}
+    .about__left-flex{width:320px;}
+    .map__contacts{position:inherit; padding: 0px; background-color: #fff;}
+    .contacts__list{margin-left:0px}
+
+
+}

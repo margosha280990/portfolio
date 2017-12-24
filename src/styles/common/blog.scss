@@ -1,0 +1,55 @@
+.block-title-u::before{background-image: url('/assets/images/ellipse-4.png');content: ''; 
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;}
+.block-title-u{color:#fff;text-transform: uppercase;font-size:35px;padding: 10px;}
+.block-title-u::after{background-image: url('/assets/images/ellipse-4-1.png');content: ''; 
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;}
+.blog__treug{
+    background: url("/assets/images/bg.svg") no-repeat center top;
+    width: 100%;
+    height: 27%;
+    margin-top: -16.4%;
+    position: absolute;
+    }
+.section.blog{color:#696969;}
+.blog__art{display:flex; text-align: center;}
+.blog__nav-spisok{list-style: none; padding: 30px;}
+.blog__nav-spisok li{padding: 10px;}
+.blog__nav-spisok li a {text-decoration: none;color:#696969; padding: 20px;}
+.blog__nav-spisok li a:hover{color:#e7a731; border-right: 1px solid #e7a731;}
+.blog__nav-hr.active{color:#e7a731; border-right: 1px solid #e7a731;}
+.blog__nav{width: 28%;}
+.blog__arcticle{text-align: left;}
+.blog__arcticle p{font-size: 13px;padding: 10px;}
+.blog__date {color:#e7a731;font-size: 13px; padding: 15px;}
+@media all and (max-width: 780px)
+{
+    .socials{
+        display: flex;
+
+    }
+    .socials__item{padding: 0px;}
+    .hero__title {
+        margin-top: 73px;
+        width: 100%;
+        margin-left: -35%;
+    }
+    .header{height: 600px;}
+    .blog__treug{margin-top: -106.4%;}
+    .blog__nav{display: none;}
+    .footer__row {
+        display: flex;
+        width: 100%;
+    }
+    .menu__footer{padding: 0px;}
+    .map__footer.footer{font-size: 13px;}
+    .container{margin-top:10px;}
+    .footer__text.footer__text_margin_top{
+        border-bottom: 1px solid #fff;
+    }
+}

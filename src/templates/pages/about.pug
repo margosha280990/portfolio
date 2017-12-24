@@ -22,22 +22,29 @@ block content
                 .user__description
                     h2.user__name Дарья Короткова
                     .user__info Личный сайт разработчика
-            button.hamburger.hero__menu
+            a(class="hamburger hero__menu")
+                .nav
+                    a(class="nav-item" href="/index.html") Главная
+                    a(class="nav-item" href="/about.html") Обо мне
+                    a(class="nav-item" href="/my-works.html") Портфолио
+                    a(class="nav-item" href="/blog.html") Блог
+                    a(class="nav-item" href="/login.html") Авторизация
             img(src="/assets/images/arrow-down.png").arrow-down.hero__scroll-btn
     section.section.about
         .about__left
             .triangle.tringle_fill_white.about__left-triangle
-            .about__left-title
-                h1.block-title Обо мне
-            .about__left-content
-                .user-description
-                    .user-description__image
-                        img(src="/assets/images/ya2.jpg").user-description__avatar
-                .user-description__title
-                    h3.block-subtitle Кто я
-                .user-description__text.text-content
-                    p Я начальник веб отдела компании ООО "РосГид" из Санкт-Петербурга. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и работающие проекты.
-                    p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
+            .about__left-flex
+                .about__left-title
+                    h1.block-title Обо мне
+                .about__left-content
+                    .user-description
+                        .user-description__image
+                            img(src="/assets/images/ya2.jpg").user-description__avatar
+                    .user-description__title
+                        h3.block-subtitle Кто я
+                    .user-description__text.text-content
+                        p Я начальник веб отдела компании ООО "РосГид" из Санкт-Петербурга. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и работающие проекты.
+                        p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
         .about__right
             .triangle.tringle_fill_beige.about__right-triangle
             .about__right-title

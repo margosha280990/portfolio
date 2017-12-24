@@ -4,33 +4,37 @@ block variables
     - var title = "Добро пожаловать на страницу Дарья Коротковой"
 
 block content
-    .welcome
-        a(class="button" href="/login.html") Авторизоваться
-        div(class="desert")
-            p(class="main_img")
-            h1 Короткова Дарья
-            p.desert__text Личный сайт full-stack программиста
-            ul.socials
-                li
-                    a(class="socials__vk" href="https://vk.com/id610196")
-                        img(src="/assets/images/vk.svg")
-                li
-                    a(class="socials__git" href="")
-                        img(src="/assets/images/github.svg")
-                li
-                    a(class="socials__face" href="")
-                        img(src="/assets/images/in.svg")
-            ul.menu    
-                li
-                    a(href="/about.html") Обо мне
-                li
-                    a(href="/my-works.html") Портфолио
-                li
-                    a(href="/blog.html") Блог
-        div(class="foot")
-            p(class="fp") Короткова Дарья |
-            p(class="fp") Создано в loftschool |
-            p(class="fp") 2017
+        .welcome
+        section.section.buttonit
+            a(class="buttonit__button" href="/login.html") Авторизоваться
+        section.section.user
+            div(class="user__desert")
+                p(class="user__main_img")
+                h1 Короткова Дарья
+                p.user__text Личный сайт full-stack программиста
+                ul.socials
+                    li
+                        a(class="socials__vk" href="https://vk.com/id610196")
+                            img(src="/assets/images/vk.svg")
+                    li
+                        a(class="socials__git" href="")
+                            img(src="/assets/images/github.svg")
+                    li
+                        a(class="socials__face" href="")
+                            img(src="/assets/images/in.svg")
+                nav.menu    
+                    
+                    li
+                        a(href="/about.html") Обо мне 
+                    li
+                        a(href="/my-works.html") Портфолио 
+                    li
+                        a(href="/blog.html") Блог
+        footer.licence
+            div(class="licence__foot")
+                p(class="licence__foot-fp") Короткова Дарья |
+                p(class="licence__foot-fp") Создано в loftschool |
+                p(class="licence__foot-fp") 2017
     
         
 

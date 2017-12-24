@@ -12,18 +12,142 @@
   </head>
   <body>
     <div class="wrapper">
-      <h1>Портфолио</h1>
-      <div class="container">
-        <ul id="slides">
-          <li class="slide showing"></li>
-          <li class="slide"></li>
-          <li class="slide"></li>
-        </ul>
-        <div class="buttons">
-          <button class="controls" id="previous">&lt;</button>
-          <button class="controls" id="next">&qt;</button>
+      <header class="header">  
+        <section class="section hero">
+          <div class="hero__socials">
+            <ul class="socials">
+              <li class="socials__item"><a class="socials__item socials__item_vk" href=""><img src="/assets/images/vk.svg"></a></li>
+              <li class="socials__item"><a class="socials__item socials__item_github" href=""><img src="/assets/images/github.svg"></a></li>
+              <li class="socials__item"><a class="socials__item socials__item_in" href=""><img src="/assets/images/in.svg"></a></li>
+            </ul>
+          </div>
+          <div class="hero__title">
+            <div class="section-title"><img class="section-title__pic" src="" alt=""></div>
+            <div class="user hero__user">
+              <div class="user__pic">
+                <div class="user__pic-img"></div>
+              </div>
+            </div>
+            <div class="user__description">
+              <h2 class="user__name">Дарья Короткова</h2>
+              <div class="user__info">Личный сайт разработчика</div>
+            </div>
+          </div><a class="hamburger hero__menu">
+            <div class="nav"><a class="nav-item" href="/index.html">Главная</a><a class="nav-item" href="/about.html">Обо мне</a><a class="nav-item" href="/my-works.html">Портфолио</a><a class="nav-item" href="/blog.html">Блог</a><a class="nav-item" href="/login.html">Авторизация</a></div></a><img class="arrow-down hero__scroll-btnw" src="/assets/images/arrow-down.png">
+        </section>
+      </header>
+      <section class="section works">
+        <div class="block">
+          <div class="block__treug"></div>
+          <h1 class="works-subtitle">Мои работы</h1>
         </div>
-      </div>
+      </section>
+      <section class="section slider">
+        <div class="slider__left">
+          <div class="slider-description__title">
+            <h2 class="block-subtitle">Treedeo</h2>
+            <div class="line">
+              <div class="slider__skills">html, css, js, php</div>
+            </div>
+            <div class="slider__but-p"><a class="slider__but" href="http://treedeo.com">Посмотреть сайт </a></div>
+          </div>
+        </div>
+        <div class="slider__right">
+          <div class="slider__image"><img class="slider__big" src="/assets/images/treedeo.png"></div>
+          <div class="slider__controls">
+            <div class="slider__next">
+              <button class="next"><img class="next__up" src="/assets/images/up.svg"></button><img class="slider__little" src="/assets/images/treedeo.png">
+            </div>
+            <div class="slider__previus">
+              <button class="prev"><img class="prev__down" src="/assets/images/down.svg"></button><img class="slider__little" src="/assets/images/treedeo.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section feedback">
+        <div class="feedback__bg">
+          <div class="feedback__about">
+            <h1 class="works-title"> Что обо мне говорят</h1>
+          </div>
+          <div class="feedback__review">
+            <div class="feedback__rev"><img class="quet" src="/assets/images/quote.png">
+              <p class="feedback__rev-c">Эта девушка проходила обучение два месяца в LoftSchool, два месяяца бессоных ночей и тяжелого труда</p>
+              <div class="feedback__photop"><img class="feedback__rev-photo" src="assets/images/dm.jpg">
+                <p>Ковальчук Дмитрий</p>
+              </div>
+            </div>
+            <div class="feedback__rev"><img class="quet" src="/assets/images/quote.png">
+              <p class="feedback__rev-c">Эта девушка проходила обучение два месяца в LoftSchool, два месяяца бессоных ночей и тяжелого труда</p>
+              <div class="feedback__photop"><img class="feedback__rev-photo" src="assets/images/dm.jpg">
+                <p>Ковальчук Дмитрий</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback__sms">
+            <h3 class="works-title"> Связаться со мной</h3>
+            <form class="feedback__fields">
+              <div class="feedback__fields-n">
+                <input class="feedback__fields-name" name="name" required placeholder="Имя">
+              </div>
+              <div class="feedback__fields-e">
+                <input class="feedback__fields-email" name="email" required placeholder="Email">
+              </div>
+              <div class="feedback__fields-t">
+                <textarea class="feedback__fields-text" name="text" cols="23" rows="5" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <nav class="menu__login">
+                <li><a href="#">
+                    <input class="login__but" type="submit" value="Очистить"></a></li>
+                <li><a href="#"> 
+                    <input class="login__but" type="submit" value="Отправить"></a></li>
+              </nav>
+            </form>
+          </div>
+          <div class="feedback__pole"></div>
+        </div>
+      </section>
+      <footer class="map__footer footer">
+        <div class="footer__row">
+          <div class="container">
+            <div class="footer__col footer__col-left">
+              <div class="footer__text">
+                <p class="footer__text_bold">Я веб-разработчик из Санкт-Петербурга, и этот сайт я сделалa в рамках обучения в Школе онлайн образования LoftSchool.</p>
+              </div>
+            </div>
+            <div class="footer__col footer__col-right">
+              <div class="footer__text footer__text_margin_top">
+                <p>Короткова Дарья Дмитриевна</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="container">
+            <div class="footer__col footer__col-left">
+              <nav class="menu__footer"><a href="/about.html">Обо мне</a><a href="/my-works.html">Портфолио</a><a href="/blog.html">Блог</a><a href="/login.html">Авторизация</a></nav>
+            </div>
+            <div class="footer__col footer__col-right">
+              <ul class="socials socials_rounded">
+                <li class="socials__item"><a class="socials__item socials__item_vk" href=""><img src="/assets/images/vk.svg"></a></li>
+                <li class="socials__item"><a class="socials__item socials__item_github" href=""><img src="/assets/images/github.svg"></a></li>
+                <li class="socials__item"><a class="socials__item socials__item_in" href=""><img src="/assets/images/in.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__row">
+          <div class="container">
+            <div class="footer__col footer__col-left">
+              <div class="footer__text_end">
+                <p>margosha280990</p>
+                <p>ddm_90@mail.ru</p>
+                <p>+79111434286</p>
+                <p>Санкт-Петербург</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

@@ -1,15 +1,57 @@
-
-<!--extends ../template-->
-<h1>Авторизуйтесь</h1>
-<form class="register">
-  <input name="email" id="email" placeholder="Логин"/>
-  <input name="password" id="password" placeholder="Пароль"/>
-  <label for="agreement">Я человек</label>
-  <input type="checkbox" name="agreement" checked="checked"/>
-  <p>Вы точно не робот?</p>
-  <label for="yes">Да</label>
-  <input type="radio" name="yes" checked="checked"/>
-  <label for="no">Нет</label>
-  <input type="radio" name="no"/>
-  <button>Войти</button>
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf8">
+    <title>Добро пожаловать О великий администратор и гуру!</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=width-device, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-eqiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/styles/app.min.css">
+    <script src="/assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="welcome"></div>
+      <header class="header__login"></header>
+      <section class="section login">
+        <div class="login__desert">
+          <h1 class="login__title">Авторизуйтесь</h1>
+          <form class="login">
+            <div class="login__fields">
+              <div class="login__fields-e"><img class="login__icon-e" src="/assets/images/login.svg">
+                <input class="login__email" data-constraints="@Required" required name="email" id="email" placeholder="Логин">
+              </div>
+              <div class="login__fields-p"><img class="login__icon-p" src="/assets/images/password.svg">
+                <input class="login__pass" type="password" data-constraints="@Required" required name="password" id="password" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="login__checkbox">
+              <input type="checkbox" name="agreement" checked>
+              <label for="agreement">Я человек</label>
+            </div>
+            <p class="login__p">Вы точно не робот?</p>
+            <div class="login__questions">
+              <input type="radio" name="yes" checked>
+              <label for="yes">Да</label>
+              <input type="radio" name="no">
+              <label for="no">Нет</label>
+            </div>
+            <nav class="menu__login">
+              <li><a href="/index.html">На главную</a></li>
+              <li><a href="#"> 
+                  <input class="login__but" type="submit" value="Вход"></a></li>
+            </nav>
+          </form>
+        </div>
+      </section>
+      <footer class="licence">
+        <div class="licence__foot">
+          <p class="licence__foot-fp">Короткова Дарья |</p>
+          <p class="licence__foot-fp">Создано в loftschool |</p>
+          <p class="licence__foot-fp">2017</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

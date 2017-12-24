@@ -1,0 +1,154 @@
+.block{
+    color: #696969;
+    text-align: center;
+    height: 100px;
+   
+    
+}
+.arrow-down.hero__scroll-btnw {
+    position: absolute;
+    z-index: 10;
+    top: 15%;
+    left: 49%;
+    text-align: center;
+}
+.section.works{
+    
+    background: #f9f9f0 url("/assets/images/works_header.svg") no-repeat center top;
+    height: 200px;
+}
+.works-subtitle::before{background-image: url('/assets/images/ellipse-4.png');content: ''; 
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;}
+.works-subtitle{text-transform: uppercase;position: relative;
+    top: 80%;}
+.works-subtitle::after{background-image: url('/assets/images/ellipse-4-1.png');content: ''; 
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;}
+.block__treug{
+    background: url("/assets/images/bg.svg");
+    width: 128.5%;
+    height: 9%;
+    position: absolute;
+    top: 9%;
+    left: -28.5%;
+    z-index: 10;
+}
+.slider__left{
+    background-color: #eeeee9;
+    width:50%;
+    color: #696969;
+}
+.slider__right{
+    background-color: #edecdf;
+    width:50%
+}
+section.section.slider{display:flex;flex-wrap:wrap;}
+.slider-description__title{
+    text-align: center;
+    margin-top: 46%;
+}
+.slider__big{
+    width:100%;
+    height: 60%;
+}
+.slider__little{width: 323px;
+    height: 300px;margin-top: -36px;}
+.slider__controls{display: flex;opacity: 0.4;}
+.line{border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    margin-top:30px;
+}
+.next{border:0;cursor: pointer;position: relative;
+    top: 39%;
+    left: 38%;
+    background: none;}
+.prev{border:0;cursor: pointer;position: relative;
+    top: 39%;
+    left: 38%;
+    background: none;}
+.slider__skills{color:#e7a731;}
+.slider__but{text-decoration: none;
+color: #fff;
+background-color: #e7a731;
+border-radius: 3px;
+padding: 10px;
+}
+.slider__but:hover{text-decoration: underline;}
+.slider__but-p{margin-top: 48px;}
+section.section.feedback{text-align: center;}
+.feedback__bg{color:#696969; background: url("/assets/images/pesok.png") no-repeat center;}
+.works-title::before{background-image: url('/assets/images/ellipse-4.png');content: ''; 
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;}
+.works-title{text-transform: uppercase;padding: 30px;}
+.works-title::after{background-image: url('/assets/images/ellipse-4-1.png');content: ''; 
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;}
+.feedback__review{display: flex;}
+.feedback__fields-text{outline: none;resize: none;overflow: auto;border-radius: 5px;
+    font-family: "Roboto-Medium";
+    font-size: 16px;
+    padding: 8px;
+}
+.feedback__fields-n{padding: 10px;}
+.feedback__fields-e{padding: 10px;}
+.feedback__fields-t{padding: 10px;}
+.feedback__fields-name{padding: 5px;}
+.feedback__fields-email{padding: 5px;}
+.feedback__sms{width: 340px;
+    background-color: rgba(215, 114, 0, 0.07); border-radius: 5px;}
+.feedback__pole{padding: 100px;}
+.quet{width:20px;margin-left:-45%;}
+.feedback__rev-c{width: 48%;text-align: justify;}
+.feedback__rev-photo{width:100px;border-radius: 300px;}
+.feedback__photop{display: flex;
+    width: 48%;
+    padding: 20px;
+    color: #e7a731;}
+@media all and (max-width: 780px)
+{
+    .block__treug{
+        background: url("/assets/images/bg.svg") no-repeat center top;
+        width: 100%;
+        left:0;
+        top: 15.35%;
+    }
+    section.section.slider{display:table;}
+    .slider__left{width:100%;display: table-row-group}
+    .slider__right{width:100%;}
+    .slider__image{display: table-header-group;}
+    .slider__controls{display: inline-flex;}
+    .slider__little{width:150px;height:150px;margin-top:0px;}
+    .slider-description__title{margin-top:0px;}
+    .feedback__review{flex-wrap:wrap;}
+    .feedback__sms{width:300px;}
+    .menu__login li{width: 145px;}
+    .feedback__pole{padding: 0px;}
+
+    .login__desert{width: 300px;}
+    .login__email{padding: 4px 29px;}
+    .login__pass{padding: 4px 29px;}
+    .login__icon-p{
+        width: 14px;
+        margin-right: 83%;
+        position: relative;
+        z-index: 1;
+        background-color: #ededee;
+        padding: 13px;
+        margin-bottom: -19%
+    }
+    .login__title{padding:10px;}
+    .buttonit__button{right: 84px;}
+}
+
